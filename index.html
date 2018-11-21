@@ -2,11 +2,85 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Глейси - Магазин мороженого</title>
   </head>
   <body>
+    <header class="main-header">
+      <h1><img src="img\logo.svg" width="150" height="100" alt="Логотип магазина «Глейси»">Магазин мороженого «Глейси»</h1>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="search-link visually-hidden">Поиск</li>
+          <li class="login-link"><a href="#">Вход</a></li>
+          <li><a href="#">Пусто</a></li>
+        </ul>
+      </nav>
+      <p  class="schedule">С 10 до 20, ежедневно</p>
+      <a class="phone" href="tel:+78124502525">8 812 450-25-25</a>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main class="container">
+ <!--     <h1 class="visually-hidden">Глейси - магазин мороженого</h1>    вместо этого н1 сделал логотип в хедере--> 
+      <section class="about-us">
+        <h2 class="visually-hidden">О нас</h2>
+        <p class=about-us-description>Магазин Глэйси&nbsp;&mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного производства на&nbsp;развес</p>
+        <ul class="about-us-list">
+          <li class="about-us-item">
+            <p>Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</p>
+          </li>
+          <li class="about-us-item">
+              <p>Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</p>
+          </li>
+          <li class="about-us-item">
+            <p>Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний, с&nbsp;которыми нас связывает долговременное сотрудничество.</p>
+          </li>
+          <li class="about-us-item">
+            <p>Доставка нашего мороженого до&nbsp;заказчиков осуществляется в&nbsp;специальном термопаке, который не&nbsp;дает мороженому растаять в&nbsp;пути и&nbsp;позволяет сохранить превосходный вкус.</p>
+          </li>
+        </ul>
+      </section>
+      <article class="from-blog">
+        <p class="from-blog-title">Новое в нашем блоге</p>
+        <h2 class="from-blog-link"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h2>
+        <p class="from-blog-picture"><img src="img\icecreamblog.jpg" width="60" height="80" alt="Клубничное мороженое"></p>
+      </article>
+      <section class="suscribe">
+        <h2 class="visually-hidden">Подписка</h2>
+        <p class="subscribe-description">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
+        <form action="#" method="get">
+          <input type="text" name="e-mail" value="Электронная почта">
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+       </ul>
+      </div>
+      <nav class="footer-navigation">
+        <ul class="ooter-navigation-list">
+          <li class="footer-navigation-importantitem"><a href="#">Для поставщиков</a></li>
+          <li class="footer-navigation-item"><a href="#">О производстве</a></li>
+          <li class="footer-navigation-item"><a href="#">Наши документы</a></li>
+          <li class="footer-navigation-item"><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img\academylogo.jpg" width="40" height="30" alt="HTML Academy"></a>
+        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
+      </p>
+    </footer>
+
 
   </body>
 </html>
