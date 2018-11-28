@@ -24,7 +24,6 @@
     </header>
 
     <main class="container">
- <!--     <h1 class="visually-hidden">Глейси - магазин мороженого</h1>    вместо этого н1 сделал логотип в хедере--> 
       <section class="about-us">
         <h2 class="visually-hidden">О нас</h2>
         <p class=about-us-description>Магазин Глэйси&nbsp;&mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного производства на&nbsp;развес</p>
@@ -50,9 +49,62 @@
       <section class="suscribe">
         <h2 class="visually-hidden">Подписка</h2>
         <p class="subscribe-description">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
-        <form action="#" method="get">
-          <input type="text" name="e-mail" value="Электронная почта">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input class="form-field" type="text" name="e-mail" value="Электронная почта">
           <button type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="modal modal-login">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="form-field" id="user-login" type="text" name="login" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-password">Пароль</label>  
+            <input class="form-field" id="user-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <button class="button" type="submit">Войти</button>
+          <p class="login-options">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </p>
+        </form>
+      </section>
+      <section class="search">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search-value">Фраза для поиска:</label>
+          <input class="form-field" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
+          <button class="visually-hidden button" type="submit">Найти</button>
+        </form>
+      </section>
+      <section class="main-menu">
+        <ul>
+          <li class="new-menu-item"><a href="#">Новинки</a></li>
+          <li class="main-menu-item"><a href="#">Сливочное</a></li>
+          <li class="main-menu-item"><a href="#">Щербеты</a></li>
+          <li class="main-menu-item"><a href="#">Фруктовый лед</a></li>
+          <li class="main-menu-item"><a href="#">Мелорин</a></li>
+        </ul>
+      </section>
+      <section class="feedback">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="visually-idden">Форма обратной связи</h2>
+          <p class="feedback-statement">Мы обязательно Вам ответим!</p>
+          <p>
+            <label class="visually-hidden" for="feedback-name">Имя:</label>
+            <input class="form-field" type="text" id="feedback-name" name="name" placeholder="Как вас зовут?">
+          </p>
+          <p>
+            <label class="visually-hidden" for="feedback-mail">E-mail:</label>
+            <input class="form-field" type="text" id="feedback-mail" name="email" placeholder="Ваша почта для ответа?">
+          </p>
+          <p>
+            <label class="visually-hidden" for="feedback-content">Сообщение:</label>
+            <textarea id="feedback-content" name="feedback" placeholder="Напишите что-нибудь..." rows="5"></textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+          <button class="modal-close" type="button">Закрыть</button>
         </form>
       </section>
     </main>
