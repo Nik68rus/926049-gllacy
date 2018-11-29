@@ -14,15 +14,88 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search-link visually-hidden">Поиск</li>
-          <li class="login-link"><a href="#">Вход</a></li>
-          <li class="not-empty"><a href="#">2 товара</a></li>
+          <li class="search-link modal-search">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="search-value">Поиск</label>
+              <input class="form-field" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
+            </form>
+          </li>
+          <li class="login-modal">
+            <span class="login-link">Вход</span>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label>
+                  Логин
+                  <input class="form-field" type="text" name="login" placeholder="Электронная почта">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Пароль  
+                  <input class="form-field" type="password" name="password" placeholder="Пароль">
+                </label>
+              </p>
+              <button class="button" type="submit">Войти</button>
+              <p class="login-options">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </form>
+          </li>
+          <li class="not-empty">
+            <span>2 товара</span>
+            <div class="goods-in-cart">
+              <table>
+                <caption class="visually-hidden">Корзина покупок</caption>
+                <tr class="cart-item">
+                  <td>
+                    <button class="delete" type="button">Удалить</button>
+                  </td>
+                  <td>
+                    <img src="img/icecream-incart-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  </td>
+                  <td>
+                    Пломбир с&nbsp;апельсиновым джемом
+                  </td>
+                  <td>
+                    1,5 кг х
+                    <span>200 руб.</span>
+                  </td>
+                  <td>
+                    300 руб.
+                  </td>
+                </tr>
+                <tr class="cart-item">
+                  <td>
+                    <button class="delete" type="button">Удалить</button>
+                  </td>
+                  <td>
+                    <img src="img/icecream-incart-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  </td>
+                  <td>
+                    Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада
+                  </td>
+                  <td>
+                    1,5 кг х
+                    <span>300 руб.</span>
+                  </td>
+                  <td>
+                    450 руб.
+                  </td>
+                </tr>
+                <tr class="total">
+                  <td colspan="4">Итого:</td>
+                  <td>750 руб.</td>
+                </tr>
+              </table>
+              <a href="#">Оформить заказ</a>
+            </div>
+          </li>
         </ul>
       </nav>
       <p  class="schedule">С 10 до 20, ежедневно</p>
       <a class="phone" href="tel:+78124502525">8 812 450-25-25</a>
     </header>
-
     <main class="container">
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
@@ -180,7 +253,6 @@
         </ul>
       </section>
     </main>
-
     <footer class="page-footer">
         <div class="footer-social">
           <ul>
@@ -204,8 +276,6 @@
           Сделано в <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
         </p>
       </footer>
-  
-  
     </body>
   </html>
   
