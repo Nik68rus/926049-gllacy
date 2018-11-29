@@ -14,8 +14,34 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search-link visually-hidden">Поиск</li>
-          <li class="login-link"><a href="#">Вход</a></li>
+          <li class="search-link modal-search">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="search-value">Поиск</label>
+              <input class="form-field" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
+            </form>
+          </li>
+          <li class="login-modal">
+            <a href="#"><h2 class="login-link">Вход</h2></a>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label>
+                  <span>Логин</span>
+                  <input class="form-field" type="text" name="login" placeholder="Электронная почта">
+                </label>
+              </p>
+              <p>
+                <label>
+                  <span>Пароль</span>  
+                  <input class="form-field" type="password" name="password" placeholder="Пароль">
+                </label>
+              </p>
+              <button class="button" type="submit">Войти</button>
+              <p class="login-options">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </form>
+          </li>
           <li><a href="#">Пусто</a></li>
         </ul>
       </nav>
@@ -54,30 +80,6 @@
           <button type="submit">Отправить</button>
         </form>
       </section>
-      <section class="modal modal-login">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="visually-hidden" for="user-login">Логин</label>
-            <input class="form-field" id="user-login" type="text" name="login" placeholder="Электронная почта">
-          </p>
-          <p>
-            <label class="visually-hidden" for="user-password">Пароль</label>  
-            <input class="form-field" id="user-password" type="password" name="password" placeholder="Пароль">
-          </p>
-          <button class="button" type="submit">Войти</button>
-          <p class="login-options">
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </p>
-        </form>
-      </section>
-      <section class="search">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="search-value">Фраза для поиска:</label>
-          <input class="form-field" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
-          <button class="visually-hidden button" type="submit">Найти</button>
-        </form>
-      </section>
       <section class="main-menu">
         <ul>
           <li class="new-menu-item"><a href="#">Новинки</a></li>
@@ -92,23 +94,28 @@
           <h2 class="visually-idden">Форма обратной связи</h2>
           <p class="feedback-statement">Мы обязательно Вам ответим!</p>
           <p>
-            <label class="visually-hidden" for="feedback-name">Имя:</label>
-            <input class="form-field" type="text" id="feedback-name" name="name" placeholder="Как вас зовут?">
+            <label>
+              <span>Имя:</span>
+              <input class="form-field" type="text" name="name" placeholder="Как вас зовут?">
+            </label>
           </p>
           <p>
-            <label class="visually-hidden" for="feedback-mail">E-mail:</label>
-            <input class="form-field" type="text" id="feedback-mail" name="email" placeholder="Ваша почта для ответа?">
+            <label>
+              <span>E-mail:</span>
+              <input class="form-field" type="text" name="email" placeholder="Ваша почта для ответа?">
+            </label>
           </p>
           <p>
-            <label class="visually-hidden" for="feedback-content">Сообщение:</label>
-            <textarea id="feedback-content" name="feedback" placeholder="Напишите что-нибудь..." rows="5"></textarea>
+            <label>
+              <span>Сообщение:</span>
+              <textarea name="feedback" placeholder="Напишите что-нибудь..." rows="5"></textarea>
+            </label>
           </p>
           <button class="button" type="submit">Отправить</button>
-          <button class="modal-close" type="button">Закрыть</button>
         </form>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
     </main>
-
     <footer class="page-footer">
       <div class="footer-social">
         <ul>
