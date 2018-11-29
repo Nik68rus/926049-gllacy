@@ -16,24 +16,22 @@
         <ul class="user-navigation">
           <li class="search-link modal-search">
             <form action="https://echo.htmlacademy.ru" method="post">
-              <label>
-                <span class="visually-hidden">Поиск</span>
-                <input class="form-field" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
-              </label>
+              <label class="visually-hidden" for="search-value">Поиск</label>
+              <input class="form-field" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
             </form>
           </li>
           <li class="login-modal">
-            <a href="#"><h2 class="login-link">Вход</h2></a>
+            <span class="login-link">Вход</span>
             <form action="https://echo.htmlacademy.ru" method="post">
               <p>
                 <label>
-                  <span>Логин</span>
+                  Логин
                   <input class="form-field" type="text" name="login" placeholder="Электронная почта">
                 </label>
               </p>
               <p>
                 <label>
-                  <span>Пароль</span>  
+                  Пароль  
                   <input class="form-field" type="password" name="password" placeholder="Пароль">
                 </label>
               </p>
@@ -45,7 +43,7 @@
             </form>
           </li>
           <li class="not-empty">
-            <a href="#">2 товара</a>
+            <span>2 товара</span>
             <div class="goods-in-cart">
               <table>
                 <caption class="visually-hidden">Корзина покупок</caption>
@@ -68,27 +66,27 @@
                   </td>
                 </tr>
                 <tr class="cart-item">
-                    <td>
-                      <button class="delete" type="button">Удалить</button>
-                    </td>
-                    <td>
-                      <img src="img/icecream-incart-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                    </td>
-                    <td>
-                      Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада
-                    </td>
-                    <td>
-                      1,5 кг х
-                      <span>300 руб.</span>
-                    </td>
-                    <td>
-                      450 руб.
-                    </td>
-                  </tr>
-                  <tr class="total">
-                    <td colspan="4">Итого:</td>
-                    <td>750 руб.</td>
-                  </tr>
+                  <td>
+                    <button class="delete" type="button">Удалить</button>
+                  </td>
+                  <td>
+                    <img src="img/icecream-incart-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  </td>
+                  <td>
+                    Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада
+                  </td>
+                  <td>
+                    1,5 кг х
+                    <span>300 руб.</span>
+                  </td>
+                  <td>
+                    450 руб.
+                  </td>
+                </tr>
+                <tr class="total">
+                  <td colspan="4">Итого:</td>
+                  <td>750 руб.</td>
+                </tr>
               </table>
               <a href="#">Оформить заказ</a>
             </div>
