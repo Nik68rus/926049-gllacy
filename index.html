@@ -8,50 +8,55 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <h1><img src="img/logo.svg" width="156" height="65" alt="Логотип магазина «Глейси»"></h1>
+    <header class="main-header container">
       <nav class="main-navigation">
-        <ul class="site-navigation list-style">
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
-        </ul>
+        <div class="wrapper">
+          <h1 class="logo"><img src="img/logo.svg" width="156" height="65" alt="Логотип магазина «Глейси»"></h1>
+          <ul class="site-navigation list-style">
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+          </ul>
+        </div>
         <ul class="user-navigation list-style">
-          <li class="modal-search not-show">
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden user-link" for="search-value">Поиск</label>
-              <input class="form-field" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
-            </form>
-          </li>
-          <li class="modal-login not-show">
-            <span class="user-link">Вход</span>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label>
-                  Логин
-                  <input class="form-field" type="text" name="login" placeholder="Электронная почта">
-                </label>
-              </p>
-              <p>
-                <label>
-                  Пароль  
-                  <input class="form-field" type="password" name="password" placeholder="Пароль">
-                </label>
-              </p>
-              <button class="button" type="submit">Войти</button>
-              <p class="login-options">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </p>
-            </form>
-          </li>
-          <li>
-            <span class="user-link">Пусто</span>
-          </li>
+            <li class="modal-search not-show">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden user-link" for="search-value">Поиск</label>
+                <input class="form-field" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
+              </form>
+            </li>
+            <li class="modal-login not-show">
+              <span class="user-link">Вход</span>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label>
+                    Логин
+                    <input class="form-field" type="text" name="login" placeholder="Электронная почта">
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Пароль  
+                    <input class="form-field" type="password" name="password" placeholder="Пароль">
+                  </label>
+                </p>
+                <button class="button" type="submit">Войти</button>
+                <p class="login-options">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </p>
+              </form>
+            </li>
+            <li>
+              <span class="user-link">Пусто</span>
+            </li>
         </ul>
+        
       </nav>
-      <p  class="schedule">С 10 до 20, ежедневно</p>
-      <a class="phone" href="tel:+78124502525">8 812 450-25-25</a>
+      <div class="info">
+        <p  class="schedule">С 10 до 20, ежедневно</p>
+        <a class="phone" href="tel:+78124502525">8 812 450-25-25</a>
+      </div>
     </header>
 
     <main class="container">
@@ -63,30 +68,32 @@
             <p>Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</p>
           </li>
           <li class="about-us-item">
-              <p>Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</p>
+            <p>Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний, с&nbsp;которыми нас связывает долговременное сотрудничество.</p>
           </li>
           <li class="about-us-item">
-            <p>Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний, с&nbsp;которыми нас связывает долговременное сотрудничество.</p>
+              <p>Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</p>
           </li>
           <li class="about-us-item">
             <p>Доставка нашего мороженого до&nbsp;заказчиков осуществляется в&nbsp;специальном термопаке, который не&nbsp;дает мороженому растаять в&nbsp;пути и&nbsp;позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
       </section>
-      <article class="from-blog">
-        <p class="from-blog-title">Новое в нашем блоге</p>
-        <h2><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h2>
-      </article>
-      <section class="subscribe">
-        <div class="in-border">
-          <h2 class="visually-hidden">Подписка</h2>
-          <p class="subscribe-description">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <input class="form-field" type="text" name="e-mail" placeholder="Электронная почта">
-            <button class="button" type="submit">Отправить</button>
-         </form>
-        </div>
-      </section>
+      <div class="columns">
+        <article class="from-blog">
+          <p class="from-blog-title">Новое в нашем блоге</p>
+          <h2><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h2>
+        </article>
+        <section class="subscribe">
+          <div class="in-border">
+            <h2 class="visually-hidden">Подписка</h2>
+            <p class="subscribe-description">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <input class="form-field" type="text" name="e-mail" placeholder="Электронная почта">
+              <button class="button" type="submit">Отправить</button>
+          </form>
+          </div>
+        </section>
+      </div>
       <section class="main-menu not-show">
         <ul class="list-style">
           <li class="new-menu-item"><a href="#">Новинки</a></li>
@@ -123,7 +130,8 @@
         <button class="modal-close" type="button">Закрыть</button>
       </section>
     </main>
-    <footer class="page-footer link-light">
+
+    <footer class="page-footer link-light container">
       <div class="footer-social">
         <ul class="social-list list-style">
           <li><a class="social-button" href="#">Твиттер</a></li>
@@ -135,8 +143,8 @@
       <nav class="footer-navigation">
         <ul class="footer-navigation-list list-style">
           <li class="footer-navigation-item footer-navigation-importantitem"><a href="#">Для поставщиков</a></li>
-          <li class="footer-navigation-item"><a href="#">О производстве</a></li>
           <li class="footer-navigation-item"><a href="#">Наши документы</a></li>
+          <li class="footer-navigation-item"><a href="#">О производстве</a></li>
           <li class="footer-navigation-item"><a href="#">Экологические стандарты</a></li>
         </ul>
       </nav>

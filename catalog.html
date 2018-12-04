@@ -8,14 +8,16 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
-    <header class="main-header">
-      <a href="index.html"><img src="img/logo.svg" width="156" height="65" alt="Логотип магазина «Глейси»"></a>
+    <header class="main-header container">
       <nav class="main-navigation link-light">
-        <ul class="site-navigation list-style">
-          <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
-        </ul>
+        <div class="wrapper">
+          <a class="no-border logo" href="index.html"><img src="img/logo.svg" width="156" height="65" alt="Логотип магазина «Глейси»"></a>
+          <ul class="site-navigation list-style">
+            <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+          </ul>
+        </div>
         <ul class="user-navigation list-style">
           <li class="search-link modal-search not-show">
             <form action="https://echo.htmlacademy.ru" method="post">
@@ -96,11 +98,13 @@
           </li>
         </ul>
       </nav>
-      <p  class="schedule">С 10 до 20, ежедневно</p>
-      <a class="phone" href="tel:+78124502525">8 812 450-25-25</a>
+      <div class="info">
+        <p  class="schedule">С 10 до 20, ежедневно</p>
+        <a class="phone" href="tel:+78124502525">8 812 450-25-25</a>
+      </div>
     </header>
     <main class="container">
-      <ul class="breadcrumbs link-light">
+      <ul class="breadcrumbs link-light list-style">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li class="breadcrumbs-current">Сливочное</li>
@@ -256,7 +260,7 @@
         </ul>
       </section>
     </main>
-    <footer class="page-footer link-light">
+    <footer class="page-footer link-light container">
         <div class="footer-social">
           <ul class="social-list list-style">
             <li><a class="social-button" href="#">Твиттер</a></li>
@@ -268,8 +272,8 @@
         <nav class="footer-navigation">
           <ul class="footer-navigation-list list-style">
             <li class="footer-navigation-item footer-navigation-importantitem"><a href="#">Для поставщиков</a></li>
-            <li class="footer-navigation-item"><a href="#">О производстве</a></li>
             <li class="footer-navigation-item"><a href="#">Наши документы</a></li>
+            <li class="footer-navigation-item"><a href="#">О производстве</a></li>
             <li class="footer-navigation-item"><a href="#">Экологические стандарты</a></li>
           </ul>
         </nav>

@@ -30,6 +30,8 @@ a {
 
 .list-style {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .site-navigation a,
@@ -82,10 +84,6 @@ a {
 	font-weight: 500;
 }
 
-.about-us-list {
-	column-count:2;
-}
-
 .from-blog-title {
 	font-weight: 500;
 }
@@ -94,8 +92,12 @@ a {
 	color: #000000;
 	background-image: url("../img/strawbery-back.jpg");
 	background-repeat: no-repeat;
+	box-sizing: border-box;
 	width: 560px;
 	height: 220px;
+	padding-left: 20px;
+	padding-top: 25px;
+	padding-right: 250px;
 	border-radius: 15px;
 }
 
@@ -107,6 +109,14 @@ a {
 	font-weight:700;
 }
 
+.from-blog h2,
+.from-blog p {
+	margin: 0;
+}
+
+.main-navigation .no-border,
+.main-navigation .no-border:hover,
+.main-navigation .no-border:active,
 .footer-copyright .no-border,
 .footer-copyright .no-border:hover,
 .footer-copyright .no-border:focus
@@ -180,9 +190,12 @@ input[type="text"]:hover {
 }
 
 .in-border {
+	box-sizing: border-box;
+	height: 100%;
 	background-color: #f8f7f4;
 	border-radius: 15px;
 	color: #5a5a5a;
+	padding: 32px 20px;
 }
 
 .footer-navigation-item {
@@ -215,12 +228,17 @@ input[type="text"]:hover {
 .breadcrumbs {
 	font-size: 14px;
 	line-height: 16px;
+	display: flex;
+	margin: 0;
+	margin-bottom: 10px;
 }
 
 .inner-page h1 {
 	font-size: 35px;
 	line-height: 41px;
 	font-weight:700;
+	margin: 0;
+	margin-bottom: 30px;
 }
 
 .catalog-price {
@@ -238,4 +256,103 @@ input[type="text"]:hover {
 .catalog-item:hover,
 .catalog-item:focus {
 	background-color: #9bafa3;
+}
+
+.main-header {
+	display:flex;
+	flex-direction: column;
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper {
+	display: flex;
+}
+
+.site-navigation {
+	display: flex;
+}
+
+
+.info {
+	margin-left: auto;
+}
+
+.logo {
+	margin-left: 27px;
+	margin-top: 10px;
+	margin-right: 24px;
+}
+
+.container {
+	width: 1146px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.about-us {
+	box-sizing: border-box;
+	padding: 28px 20px;
+	margin-bottom: 40px;
+}
+
+.about-us-description {
+	margin:0;
+	margin-bottom: 10px;
+}
+
+.about-us-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about-us-item {
+	width: 540px;
+}
+
+.columns {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.subscribe p {
+	margin:0;
+	margin-bottom: 40px;
+}
+
+.page-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-list {
+	display: flex;
+	width: 190px;
+}
+
+.footer-navigation-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.catalog-item img {
+	border-radius: 50%;
+}
+
+.catalog-item {
+	width: 267px;
+	margin-bottom: 25px;
 }
