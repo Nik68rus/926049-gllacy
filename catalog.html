@@ -3,24 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси - Магазин мороженого</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <a href="index.html"><img src="img/logo.svg" width="156" height="65" alt="Логотип магазина «Глейси»"></a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
+      <nav class="main-navigation link-light">
+        <ul class="site-navigation list-style">
           <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <ul class="user-navigation">
-          <li class="search-link modal-search">
+        <ul class="user-navigation list-style">
+          <li class="search-link modal-search not-show">
             <form action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="search-value">Поиск</label>
               <input class="form-field" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
             </form>
           </li>
-          <li class="login-modal">
+          <li class="modal-login not-show">
             <span class="login-link">Вход</span>
             <form action="https://echo.htmlacademy.ru" method="post">
               <p>
@@ -42,7 +45,7 @@
               </p>
             </form>
           </li>
-          <li class="not-empty">
+          <li class="not-empty modal-cart not-show">
             <span>2 товара</span>
             <div class="goods-in-cart">
               <table>
@@ -88,7 +91,7 @@
                   <td>750 руб.</td>
                 </tr>
               </table>
-              <a href="#">Оформить заказ</a>
+              <a class="button" href="#">Оформить заказ</a>
             </div>
           </li>
         </ul>
@@ -97,7 +100,7 @@
       <a class="phone" href="tel:+78124502525">8 812 450-25-25</a>
     </header>
     <main class="container">
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs link-light">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li class="breadcrumbs-current">Сливочное</li>
@@ -105,7 +108,7 @@
       <h1>Сливочное мороженое</h1>
       <section class="catalog">
         <h2 class="visually-hidden">Ассортимент сливочного мороженого</h2>
-        <ul class="catalog-list">
+        <ul class="catalog-list link-light list-style">
           <li class="catalog-item">
             <article>
               <img src="img/icecream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -253,9 +256,9 @@
         </ul>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer link-light">
         <div class="footer-social">
-          <ul>
+          <ul class="social-list list-style">
             <li><a class="social-button" href="#">Твиттер</a></li>
             <li><a class="social-button" href="#">Инстаграм</a></li>
             <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -263,17 +266,17 @@
          </ul>
         </div>
         <nav class="footer-navigation">
-          <ul class="ooter-navigation-list">
-            <li class="footer-navigation-importantitem"><a href="#">Для поставщиков</a></li>
+          <ul class="footer-navigation-list list-style">
+            <li class="footer-navigation-item footer-navigation-importantitem"><a href="#">Для поставщиков</a></li>
             <li class="footer-navigation-item"><a href="#">О производстве</a></li>
             <li class="footer-navigation-item"><a href="#">Наши документы</a></li>
             <li class="footer-navigation-item"><a href="#">Экологические стандарты</a></li>
           </ul>
         </nav>
         <p class="footer-copyright">
-          <img src="img/logo-htmlacademy-small.svg" width="110" height="38" alt="HTML Academy">
+          <a class="no-border" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" width="120" height="38" alt="HTML Academy"></a>
           <br>
-          Сделано в <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
+          Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
         </p>
       </footer>
     </body>

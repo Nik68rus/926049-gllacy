@@ -1,0 +1,241 @@
+body {
+	margin: 0;
+	padding: 0;
+  font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #ffffff;
+	background-color: #849d8f;
+}
+.not-show {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.site-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight:700;
+}
+
+.user-navigation {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.list-style {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255,255,255,0.5)
+}
+
+.user-link {
+	background-color: #a1b4a9;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.user-link:hover,
+.user-link:focus {
+	background-color: #f7f6f3;
+	color: #000000;
+}
+
+.schedule {
+	font-size: 14px;
+	line-height: 6px;
+	font-weight:700;
+}
+
+.phone {
+	font-size: 22px;
+	line-height: 24x;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight:700;
+}
+
+.about-us {
+	background-image: url(../img/wafle-back.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 15px;
+	width: 1146px;
+	height: 306px;
+	color: #000000;
+}
+
+.about-us-description {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.about-us-list {
+	column-count:2;
+}
+
+.from-blog-title {
+	font-weight: 500;
+}
+
+.from-blog {
+	color: #000000;
+	background-image: url("../img/strawbery-back.jpg");
+	background-repeat: no-repeat;
+	width: 560px;
+	height: 220px;
+	border-radius: 15px;
+}
+
+.from-blog a {
+	text-decoration: underline;
+	color: #000000;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight:700;
+}
+
+.footer-copyright .no-border,
+.footer-copyright .no-border:hover,
+.footer-copyright .no-border:focus
+ {
+	border: none;
+}
+
+.link-dark a {
+	color:#000000;
+	border-bottom: 1px solid rgba(0,0,0,0.5)
+}
+
+.link-light a {
+	color:#ffffff;
+	border-bottom: 1px solid rgba(255,255,255,0.5)
+}
+
+.link-dark a:hover,
+.link-dark a:focus,
+.link-dark a:active {
+	color:#e84d37;
+	border-bottom: 1px solid rgba(232,77,55,0.5)
+}
+
+.link-light a:hover,
+.link-light a:focus,
+.link-light a:active {
+	color:#ffbc9e;
+	border-bottom: 1px solid rgba(255,188,158,0.5)
+}
+
+input[type="text"] {
+	font-color: #323232;
+	border-radius: 3px;
+	line-height: 24px;
+	border:1px solid #b2b2b2;
+}
+
+input[type="text"]:hover {
+	box-shadow: 0 0 0 2px #9a9a9a;
+}
+
+.button {
+	font: inherit;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight:700;
+	text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+	border: none;
+	border-radius: 30px;
+	background: linear-gradient(to bottom, #f16743 , #d84936);
+}
+
+.button:hover,
+.button:focus {
+	background: linear-gradient(to bottom, #f58569 , #df5c4b);
+}
+
+.button:active {
+	background: linear-gradient(to bottom, #f84732 , #d16b4c);
+}
+
+.subscribe {
+	width: 548px;
+	height: 208px;
+	padding: 6px;
+	background-image: url("../img/post-back.jpg");
+	border-radius: 15px;
+}
+
+.in-border {
+	background-color: #f8f7f4;
+	border-radius: 15px;
+	color: #5a5a5a;
+}
+
+.footer-navigation-item {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.footer-navigation-importantitem {
+	font-weight: 700;
+}
+
+.footer-copyright {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.site-navigation-current {
+	background-color: #d07058;
+	border-radius: 20px;
+}
+
+.breadcrumbs {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.inner-page h1 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight:700;
+}
+
+.catalog-price {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight:700;
+}
+
+.catalog-measurement {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight:700;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+	background-color: #9bafa3;
+}
