@@ -30,6 +30,8 @@ a {
 
 .list-style {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .site-navigation a,
@@ -54,13 +56,15 @@ a {
 
 .schedule {
 	font-size: 14px;
-	line-height: 6px;
+	line-height: 16px;
 	font-weight:700;
+	text-align: end;
+	margin-bottom: 7px;
 }
 
 .phone {
 	font-size: 22px;
-	line-height: 24x;
+	line-height: 24px;
 	color: #ffffff;
 	text-decoration: none;
 	font-weight:700;
@@ -72,7 +76,6 @@ a {
 	background-position: center center;
 	border-radius: 15px;
 	width: 1146px;
-	height: 306px;
 	color: #000000;
 }
 
@@ -80,10 +83,6 @@ a {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
-}
-
-.about-us-list {
-	column-count:2;
 }
 
 .from-blog-title {
@@ -94,8 +93,12 @@ a {
 	color: #000000;
 	background-image: url("../img/strawbery-back.jpg");
 	background-repeat: no-repeat;
+	box-sizing: border-box;
 	width: 560px;
-	height: 220px;
+	padding-left: 20px;
+	padding-top: 25px;
+	padding-right: 250px;
+	padding-bottom:25px;
 	border-radius: 15px;
 }
 
@@ -107,11 +110,22 @@ a {
 	font-weight:700;
 }
 
-.footer-copyright .no-border,
-.footer-copyright .no-border:hover,
-.footer-copyright .no-border:focus
- {
+.from-blog h2,
+.from-blog p {
+	margin: 0;
+}
+
+.main-navigation .logo,
+.main-navigation .logo:hover {
 	border: none;
+	padding-top: 10px;
+	margin-right: 24px;
+}
+
+.page-footer .logo,
+.page-footer .logo:hover {
+	display: block;
+	border:none;
 }
 
 .link-dark a {
@@ -173,16 +187,17 @@ input[type="text"]:hover {
 
 .subscribe {
 	width: 548px;
-	height: 208px;
 	padding: 6px;
 	background-image: url("../img/post-back.jpg");
 	border-radius: 15px;
 }
 
-.in-border {
+.subscribe-inner {
+	box-sizing: border-box;
 	background-color: #f8f7f4;
 	border-radius: 15px;
 	color: #5a5a5a;
+	padding: 32px 20px;
 }
 
 .footer-navigation-item {
@@ -215,12 +230,22 @@ input[type="text"]:hover {
 .breadcrumbs {
 	font-size: 14px;
 	line-height: 16px;
+	display: flex;
+	margin: 0;
+	margin-bottom: 10px;
 }
 
 .inner-page h1 {
 	font-size: 35px;
 	line-height: 41px;
 	font-weight:700;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.main-navigation h1 {
+	padding: 0;
+	margin: 0;
 }
 
 .catalog-price {
@@ -238,4 +263,103 @@ input[type="text"]:hover {
 .catalog-item:hover,
 .catalog-item:focus {
 	background-color: #9bafa3;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-left: auto;
+}
+
+.main-navigation {
+	display: flex;
+}
+
+.site-navigation {
+	display: flex;
+}
+
+.site-navigation li {
+	padding-top: 29px;
+}
+
+.user-navigation li {
+	padding-top: 29px;
+}
+
+.container {
+	width: 1146px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.about-us {
+	box-sizing: border-box;
+	padding: 22px 20px;
+	margin-bottom: 40px;
+}
+
+.about-us-description {
+	margin:0;
+	margin-bottom: 10px;
+}
+
+.about-us-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about-us-item {
+	width: 540px;
+}
+
+.columns {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.subscribe p {
+	margin:0;
+	margin-bottom: 40px;
+}
+
+.page-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-list {
+	display: flex;
+	width: 190px;
+}
+
+.footer-navigation-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.catalog-item img {
+	border-radius: 50%;
+}
+
+.catalog-item {
+	width: 267px;
+	margin-bottom: 25px;
+}
+
+.catalog-item a {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
 }
