@@ -14,19 +14,20 @@
         <ul class="site-navigation list-style">
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
+          <li><a href="#">О Компании</a></li>
         </ul>
         <div class="wrapper">
           <ul class="user-navigation list-style">
-              <li class="modal-search not-show">
+              <li class="modal-search">
+                <span class="user-link search-link"></span>
                 <form action="https://echo.htmlacademy.ru" method="post">
-                  <label class="visually-hidden user-link" for="search-value">Поиск</label>
-                  <input class="form-field" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
+                  <label class="visually-hidden" for="search-value">Поиск</label>
+                  <input class="form-field not-show" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
                 </form>
               </li>
-              <li class="modal-login not-show">
-                <span class="user-link">Вход</span>
-                <form action="https://echo.htmlacademy.ru" method="post">
+              <li class="modal-login">
+                <span class="user-link login-link">Вход</span>
+                <form class="not-show" action="https://echo.htmlacademy.ru" method="post">
                   <p>
                     <label>
                       Логин
@@ -47,7 +48,7 @@
                 </form>
               </li>
               <li>
-                <span class="user-link">Пусто</span>
+                <span class="user-link cart-link">Пусто</span>
               </li>
           </ul>
           <div class="info">
@@ -63,16 +64,16 @@
         <h2 class="visually-hidden">О нас</h2>
         <p class=about-us-description>Магазин Глэйси&nbsp;&mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного производства на&nbsp;развес</p>
         <ul class="about-us-list list-style">
-          <li class="about-us-item">
+          <li class="about-us-item technology">
             <p>Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</p>
           </li>
-          <li class="about-us-item">
+          <li class="about-us-item ingredients">
             <p>Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний, с&nbsp;которыми нас связывает долговременное сотрудничество.</p>
           </li>
-          <li class="about-us-item">
+          <li class="about-us-item natural">
               <p>Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</p>
           </li>
-          <li class="about-us-item">
+          <li class="about-us-item delivery">
             <p>Доставка нашего мороженого до&nbsp;заказчиков осуществляется в&nbsp;специальном термопаке, который не&nbsp;дает мороженому растаять в&nbsp;пути и&nbsp;позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
@@ -86,9 +87,9 @@
           <div class="subscribe-inner">
             <h2 class="visually-hidden">Подписка</h2>
             <p class="subscribe-description">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <input class="form-field" type="text" name="e-mail" placeholder="Электронная почта">
-              <button class="button" type="submit">Отправить</button>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="subscribe-form-field" type="text" name="e-mail" placeholder="Электронная почта">
+              <button class="button red-button" type="submit">Отправить</button>
           </form>
           </div>
         </section>
@@ -130,16 +131,16 @@
       </section>
     </main>
 
-    <footer class="page-footer link-light container">
+    <footer class="page-footer container">
       <div class="footer-social">
         <ul class="social-list list-style">
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button social-tw" href="#"></a></li>
+          <li><a class="social-button social-ig" href="#"></a></li>
+          <li><a class="social-button social-fb" href="#"></a></li>
+          <li><a class="social-button social-vk" href="#"></a></li>
        </ul>
       </div>
-      <nav class="footer-navigation">
+      <nav class="footer-navigation link-light">
         <ul class="footer-navigation-list list-style">
           <li class="footer-navigation-item footer-navigation-importantitem"><a href="#">Для поставщиков</a></li>
           <li class="footer-navigation-item"><a href="#">Наши документы</a></li>
@@ -147,7 +148,7 @@
           <li class="footer-navigation-item"><a href="#">Экологические стандарты</a></li>
         </ul>
       </nav>
-      <p class="footer-copyright">
+      <p class="footer-copyright link-light">
         <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" width="120" height="38" alt="HTML Academy"></a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
       </p>
