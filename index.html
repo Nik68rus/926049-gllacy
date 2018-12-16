@@ -12,40 +12,53 @@
       <nav class="main-navigation">
         <h1 class="logo"><img src="img/logo.svg" width="156" height="65" alt="Логотип магазина «Глейси»"></h1>
         <ul class="site-navigation list-style">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li class="menu">
+            <a href="#">Каталог</a>
+            <div class="modal-wrapper">
+              <section class="main-menu not-show modal-form">
+                <ul class="list-style">
+                  <li class="main-menu-item new-menu-item"><a href="#">Новинки</a></li>
+                  <li class="main-menu-item"><a href="catalog.html">Сливочное</a></li>
+                  <li class="main-menu-item"><a href="#">Щербеты</a></li>
+                  <li class="main-menu-item"><a href="#">Фруктовый лед</a></li>
+                  <li class="main-menu-item"><a href="#">Мелорин</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
-        </ul>
+        </ul> 
         <div class="wrapper">
           <ul class="user-navigation list-style">
               <li class="modal-search">
                 <span class="user-link search-link"></span>
-                <form action="https://echo.htmlacademy.ru" method="post">
-                  <label class="visually-hidden" for="search-value">Поиск</label>
-                  <input class="form-field not-show" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
-                </form>
+                <div class="modal-wrapper">
+                  <form class="modal-form search-form not-show" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden" for="search-value">Поиск</label>
+                    <input class="form-field" type="text" id="search-value" name="search-request" placeholder="Что ищем?">
+                  </form>
+                </div>
               </li>
               <li class="modal-login">
                 <span class="user-link login-link">Вход</span>
-                <form class="not-show" action="https://echo.htmlacademy.ru" method="post">
-                  <p>
-                    <label>
-                      Логин
-                      <input class="form-field" type="text" name="login" placeholder="Электронная почта">
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Пароль  
-                      <input class="form-field" type="password" name="password" placeholder="Пароль">
-                    </label>
-                  </p>
-                  <button class="button" type="submit">Войти</button>
-                  <p class="login-options">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
-                  </p>
-                </form>
+                <div class="modal-wrapper">
+                  <form class="modal-form login-form not-show" action="https://echo.htmlacademy.ru" method="post">
+                      <label>
+                        <span class="visually-hidden">Логин</span>
+                        <input class="form-field" type="text" name="login" placeholder="Электронная почта">
+                      </label>
+                      <label>
+                        <span  class="visually-hidden">Пароль</span>  
+                        <input class="form-field" type="password" name="password" placeholder="Пароль">
+                      </label>
+                    <button class="button" type="submit">Войти</button>
+                    <p class="login-options link-dark">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </p>
+                  </form>
+                </div>
               </li>
               <li>
                 <span class="user-link cart-link">Пусто</span>
@@ -89,20 +102,11 @@
             <p class="subscribe-description">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
               <input class="subscribe-form-field" type="text" name="e-mail" placeholder="Электронная почта">
-              <button class="button red-button" type="submit">Отправить</button>
+              <button class="button" type="submit">Отправить</button>
           </form>
           </div>
         </section>
       </div>
-      <section class="main-menu not-show">
-        <ul class="list-style">
-          <li class="new-menu-item"><a href="#">Новинки</a></li>
-          <li class="main-menu-item"><a href="#">Сливочное</a></li>
-          <li class="main-menu-item"><a href="#">Щербеты</a></li>
-          <li class="main-menu-item"><a href="#">Фруктовый лед</a></li>
-          <li class="main-menu-item"><a href="#">Мелорин</a></li>
-        </ul>
-      </section>
       <section class="feedback not-show">
         <form action="https://echo.htmlacademy.ru" method="post">
           <h2 class="visually-idden">Форма обратной связи</h2>
