@@ -8,6 +8,32 @@ body {
 	color: #ffffff;
 	background-color: #849d8f;
 }
+
+.site-wrapper {
+	min-width: 940px;
+	background-color: #849d8f;
+	background-image: url("../img/icecream-slide-1.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	min-height: 100vh;
+	transition: background-image 0.5s ease, background-color 0.5s ease;
+  }
+
+.site-wrapper::before,
+.site-wrapper::after {
+	content: "";
+
+	visibility: hidden;
+}
+	
+.site-wrapper::before {
+	background-image: url("../img/icecream-slide-2.png");
+}
+	
+.site-wrapper::after {
+	background-image: url("../img/icecream-slide-3.png");
+}
+
 .not-show {
 	display: none;
 }
@@ -79,7 +105,7 @@ body {
 .info{
 	margin: 0;
 	padding: 0;
-	margin-top: 26px; 
+	margin-top: 12px; 
 }
 
 .info .schedule {
@@ -371,6 +397,7 @@ input[type="password"]:hover {
 }
 
 .button {
+  display: inline-block;
 	font: inherit;
 	font-size: 18px;
 	line-height: 24px;
@@ -381,21 +408,155 @@ input[type="password"]:hover {
 	border: none;
 	border-radius: 30px;
 	background: linear-gradient(to bottom, #f16743 , #d84936);
-	padding: 11px 19px ;
+	padding: 12px 20px ;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	border: none;
 }
 
 .button:hover,
 .button:focus {
 	background: linear-gradient(to bottom, #f58569 , #df5c4b);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active {
 	background: linear-gradient(to bottom, #f84732 , #d16b4c);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+
+}
+
+.slider .button {
+	padding: 12px 44px;
+	font-weight: 600;
+  font-size: 31px;
+	line-height: 41px;
+	text-decoration: none;
+	margin-bottom: 41px;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+  
+  font-size: 0;
+}
+
+.slide {
+	display: none;
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/icecream-slide-1.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/icecream-slide-2.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/icecream-slide-3.png");
+}
+
+.action-list {
+	display:flex;
+	justify-content: space-between;
+}
+
+.action-item:first-of-type {
+	background-image: url("../img/raspberry-back.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.action-item:last-of-type {
+	background-image: url("../img/chokolate-back.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+
+.action-item {
+	box-sizing: border-box;
+	padding: 18px 20px;
+	width: 560px;
+	border-radius: 15px;
+	background-color: #5a5a5a;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.action-item h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.action-item p {
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+	margin-bottom: 42px;
+}
+
+.action-item .button {
+	align-self: flex-end;
+	margin-bottom: 4px;
+}
+
+.actions {
+	margin-bottom: 40px;
+}
+
+.hit {
+	width: 62px;
+	height: 62px;
+	position: absolute;
+	background-image: url("../img/hit.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 50%;
 }
 
 .subscribe {
 	width: 548px;
-	padding: 6px;
+	padding: 5px;
 	background-image: url("../img/post-back.jpg");
 	border-radius: 15px;
 }
@@ -419,6 +580,61 @@ input[type="password"]:hover {
 	box-sizing: border-box;
 	min-width: 368px;
 	padding: 10px;
+}
+
+.map {
+	position: relative;
+	width: 1200px;
+	height: 428px;
+	background-image: url("../img/map.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-left: -27px;
+	margin-bottom: 36px;
+}
+
+.adress {
+	box-sizing: border-box;
+	width: 302px;
+	color: #000000;
+	background-color: #fefefe;
+	border-radius: 15px;
+	position: absolute;
+	right:27px;
+	bottom: 60px;
+	padding: 30px 27px;
+}
+
+.adress-small {
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 400;
+	padding-right: 100px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 6px;
+}
+
+.adress-big {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.adress a {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000;
+	text-decoration: none;
+}
+
+.adress .button {
+	padding: 10px 25px;
+	margin-top:25px;
 }
 
 .social-button {
@@ -575,7 +791,27 @@ input[type="password"]:hover {
 .container {
 	width: 1146px;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 20px;
+}
+
+.slider {
+	position: relative;
+	
+	padding-top: 275px;
+	
+	text-align: center;
+	color: #ffffff;
+/*	margin-bottom: 50px;*/
+}
+
+.slide-title {
+	width: 700px;
+	margin: 0 auto;
+	margin-bottom: 27px;
+	
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 800;
 }
 
 .columns {
