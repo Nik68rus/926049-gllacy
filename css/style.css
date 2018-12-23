@@ -1217,7 +1217,8 @@ textarea {
 	color: #ffffff;
 }
 
-.modal-cart:hover .goods-in-cart {
+.modal-cart:hover .goods-in-cart,
+.modal-cart:focus .goods-in-cart {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
