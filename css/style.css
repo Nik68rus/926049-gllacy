@@ -1252,13 +1252,14 @@ textarea {
 .goods-in-cart button {
 	width: 14px;
 	height: 14px;
-	border:none;
-	background-color: #f8f7f4;
+	border: 0;
+	background-color: transparent;
 	background-image: url(../img/x.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	cursor: pointer;
 }
+
 
 .goods-in-cart span {
 	color: #d6d5d4;
@@ -1346,4 +1347,41 @@ textarea {
 
 .modal-feedback .button {
 	align-self: flex-end;
+}
+
+.modal-close {
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 0;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	width: 20px;
+	height: 2px;
+	position: absolute;
+	top: 5px;
+	right: 0;
+	background-color: #000000;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+}
+
+.feedback {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -221px;
+	margin-left: -238px;
 }
