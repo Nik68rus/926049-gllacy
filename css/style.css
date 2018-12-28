@@ -1362,8 +1362,8 @@ textarea {
 	cursor: pointer;
 	font-size: 0;
 	position: absolute;
-	top: 15px;
-	right: 15px;
+	top: 20px;
+	right: 20px;
 }
 
 .modal-close::before,
@@ -1372,8 +1372,8 @@ textarea {
 	width: 20px;
 	height: 2px;
 	position: absolute;
-	top: 5px;
-	right: 0;
+	top: 0;
+	right: -5px;
 	background-color: #000000;
 }
 
@@ -1391,4 +1391,54 @@ textarea {
 	left: 50%;
 	margin-top: -221px;
 	margin-left: -238px;
+	z-index: 30;
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+	0% {
+	  transform: translateY(-2000px);
+	}
+  
+	70% {
+	  transform: translateY(30px);
+	}
+  
+	90% {
+	  transform: translateY(-10px);
+	}
+  
+	100% {
+	  transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
